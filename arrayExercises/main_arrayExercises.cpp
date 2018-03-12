@@ -13,7 +13,10 @@ int main()
 	char cont;
 	std::vector<int> main_list;
 
-	remove(main_list, 6, 2);
+	remove(main_list, 6, 14);
+	std::cout << std::endl;
+	std::cout << std::endl;
+	//remove(main_list, 6, 2);
 
 
 	std::cout << std::endl;

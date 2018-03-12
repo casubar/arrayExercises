@@ -12,6 +12,7 @@ function should find and delete the first occurrence of removeItem in the
 array. If the value does not exist or the array is empty, output an appropriate
 message. (Note that after deleting the element, the number of elements in
 the array is reduced by 1.) Assume that the array is unsorted.*/
+
 void remove(std::vector<int> &list, int listSize, int removeItem) {
 	int loc, temp, finder;
 	bool found;
@@ -29,9 +30,8 @@ void remove(std::vector<int> &list, int listSize, int removeItem) {
 
 	finder = 0;
 	// find removeItem
-	while (!found && finder < list.size()) {
-		// if found then delete from the list
-		if (list[finder] == removeItem) {
+	while (!found && finder < list.size()) {		
+		if (list[finder] == removeItem) { // if found then delete from the list
 			loc = finder;
 			found = true;
 			// shift elements
@@ -54,4 +54,16 @@ void remove(std::vector<int> &list, int listSize, int removeItem) {
 		std::cout << std::endl;
 		std::cout << "Item not in the list" << std::endl;
 	}	
+}
+
+/*removeAt, that takes three parameters: an array of
+integers, the number of elements in the array, and an integer (say,
+index). The function should delete the array element indicated by
+index. If index is out of range or the array is empty, output an appropriate
+message. (Note that after deleting the element, the number of elements in
+the array is reduced by 1.) Assume that the array is unsorted.*/
+
+void removeAt(std::vector<int> &list, int listSize, int loc) {
+
+
 }
