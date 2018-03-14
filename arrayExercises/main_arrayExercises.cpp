@@ -13,10 +13,13 @@ int main()
 	char cont;
 	std::vector<int> main_list;
 
-	remove(main_list, 6, 14);
+	//remove(main_list, 6, 14);
 	std::cout << std::endl;
 	std::cout << std::endl;
-	//remove(main_list, 6, 2);
+
+	removeAt(main_list, 6, 8);
+	std::cout << std::endl;
+	removeAllOccur(main_list, 5, 3);
 
 
 	std::cout << std::endl;
